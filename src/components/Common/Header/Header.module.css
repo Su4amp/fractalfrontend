@@ -1,0 +1,30 @@
+.header {
+  height: rem(56px);
+  margin-bottom: rem(120px);
+}
+
+.inner {
+  height: rem(56px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  color: #f2f3f5;
+  text-decoration: underline;
+  display: block;
+  line-height: 1;
+  padding: rem(8px) rem(12px);
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.linkLabel {
+  margin-right: rem(5px);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  font-weight: 700;
+  font-size: 18px;
+}

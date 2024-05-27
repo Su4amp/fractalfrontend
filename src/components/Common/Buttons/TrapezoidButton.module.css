@@ -1,0 +1,11 @@
+.paralellogram {
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background-color: #29bdef;
+  border-radius: 6px;
+}
+
+.paralellogram:hover {
+  background-color: #1eaddd;
+}
