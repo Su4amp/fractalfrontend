@@ -19,8 +19,16 @@ const headerLinks = [
     text: "Frankestein",
     dropdownLinks: [
       {
-        link: "/frankestein-dropdown",
-        text: "Link dropdown",
+        link: "/sobre-o-evento",
+        text: "Sobre o evento",
+      },
+      {
+        link: "/participar",
+        text: "Participar",
+      },
+      {
+        link: "/historico",
+        text: "Histórico",
       },
     ],
   },
@@ -91,7 +99,7 @@ export default function Header() {
         <div className="items-center gap-5 hidden lg:flex">
           <TrapezoidButton text="Baixar App" />
           {headerIcons.map((icon) => (
-            <IconButton icon={icon} />
+            <IconButton key={icon} icon={icon} />
           ))}
         </div>
 
