@@ -1,10 +1,15 @@
 import { Image, UnstyledButton } from "@mantine/core";
 import gameImage from "../../assets/game.png";
 import Header from "../../components/Common/Header/Header";
+import { FaWindows } from "react-icons/fa6";
+import { FaLinux, FaApple } from "react-icons/fa";
+import TrapezoidButton from "../../components/Common/Buttons/TrapezoidButton";
+import Carousel from "../../components/Common/Carousel/Carousel/Carousel";
 
 import rightArrowIcon from "../../assets/icons/rightArrowIcon.svg";
 import leftArrowIcon from "../../assets/icons/leftArrowIcon.svg";
-import Carousel from "../../components/Common/Carousel/Carousel/Carousel";
+
+import triangles from "../../assets/images/triangles.png";
 
 import gameImageTest from "../../assets/images/highlightedGame.png";
 import rubensBarichello from "../../assets/images/rubensBarrichello.jpg";
@@ -37,11 +42,39 @@ export default function Home() {
           <Image src={leftArrowIcon} />
         </UnstyledButton>
       </div>
-      <section className="bg-[#141414] h-[500px]">
+      <section className="bg-[#141414]">
         <h5 className="text-white text-4xl text-center py-7">
           Jogos em destaque
         </h5>
         <Carousel images={images} />
+      </section>
+      <section className="relative flex items-center justify-center bg-gradient-to-r from-black to-[#1C2765] h-[500px]">
+        <Image
+          src={triangles}
+          alt="Triângulos"
+          className="absolute top-0 right-0 w-80"
+          draggable={false}
+        />
+        <div className="flex flex-col gap-10">
+          <h5 className="text-white text-5xl mb-10">Baixar launcher</h5>
+          <div className="w-fit mx-auto flex flex-col gap-5 justify-center">
+            <TrapezoidButton
+              text="Windows"
+              icon={<FaWindows size={32} />}
+              style={{ width: "200px" }}
+            />
+            <TrapezoidButton
+              text="macOS"
+              icon={<FaApple size={32} />}
+              style={{ width: "200px" }}
+            />
+            <TrapezoidButton
+              text="Linux"
+              icon={<FaLinux size={32} />}
+              style={{ width: "200px" }}
+            />
+          </div>
+        </div>
       </section>
     </main>
   );

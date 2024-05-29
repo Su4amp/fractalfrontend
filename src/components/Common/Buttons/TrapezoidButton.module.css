@@ -8,4 +8,5 @@
 
 .paralellogram:hover {
   background-color: #1eaddd;
+  cursor: pointer;
 }
