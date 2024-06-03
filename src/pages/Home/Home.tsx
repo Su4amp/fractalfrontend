@@ -52,7 +52,7 @@ export default function Home() {
         <Image
           src={triangles}
           alt="Triângulos"
-          className="absolute top-0 right-0 w-80"
+          className="absolute top-0 right-0 w-60 lg:w-80"
           draggable={false}
         />
         <div className="flex flex-col gap-10">
