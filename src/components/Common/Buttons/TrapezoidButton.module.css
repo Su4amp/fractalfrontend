@@ -8,4 +8,11 @@
 
 .paralellogram:hover {
   background-color: #1eaddd;
+  cursor: pointer;
+}
+
+.fixSkew {
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
 }
