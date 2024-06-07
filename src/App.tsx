@@ -6,7 +6,7 @@ import "./index.scss";
 
 function App() {
   return (
-    <MantineProvider defaultColorScheme="light" forceColorScheme="light">
+    <MantineProvider defaultColorScheme="dark" forceColorScheme="dark">
       <AppRoutes />
     </MantineProvider>
   );

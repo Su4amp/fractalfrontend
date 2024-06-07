@@ -1,16 +1,16 @@
 import { Burger, Center, Image, Menu } from "@mantine/core";
+import { IconChevronDown } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import TrapezoidButton from "../Buttons/TrapezoidButton";
-import { IconChevronDown } from "@tabler/icons-react";
 
-import fractalLogo from "../../../assets/logo.svg";
-import savedIcon from "../../../assets/icons/savedIcon.svg";
 import cartIcon from "../../../assets/icons/cartIcon.svg";
+import savedIcon from "../../../assets/icons/savedIcon.svg";
 import translateIcon from "../../../assets/icons/translateIcon.svg";
 import userIcon from "../../../assets/icons/userIcon.svg";
+import fractalLogo from "../../../assets/logo.svg";
 
-import classes from "./Header.module.css";
 import { useDisclosure } from "@mantine/hooks";
+import classes from "./Header.module.css";
 import IconButton from "./components/IconButton";
 
 const headerLinks = [
@@ -33,7 +33,7 @@ const headerLinks = [
     ],
   },
   {
-    link: "/produtos",
+    link: "/jogos",
     text: "Produtos",
   },
   {
